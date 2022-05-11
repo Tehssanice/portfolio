@@ -1,0 +1,54 @@
+@media screen and (max-width:480px) {
+    .container nav .box:last-child>ul {
+        flex-direction: column;
+        width: 150px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 4em;
+        display: none;
+    }
+
+    .container nav {
+        padding: 0 1em;
+    }
+
+    .container nav .box .menu:hover+ul {
+        display: block;
+    }
+
+    .menu>i {
+        font-size: large;
+    }
+
+    .container .section .peach,
+    .container .section.cover {
+        width: 100%;
+        margin-bottom: 5em;
+        padding: 0;
+    }
+
+    .menu {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    .container .section {
+        padding: 3em 1em;
+        flex-direction: column;
+    }
+
+    .container .section .cover {
+        width: 100%;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .container .section .cover figure {
+        height: unset;
+    }
+
+}
