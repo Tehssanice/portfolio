@@ -1,4 +1,4 @@
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     .container nav .box:last-child>ul {
         flex-direction: column;
         width: 150px;
@@ -10,7 +10,7 @@
     }
 
     .container nav {
-        padding: 0 1em;
+        padding: 0 2em;
     }
 
     .container nav .box .menu:hover+ul {
@@ -24,8 +24,31 @@
     .container .section .peach,
     .container .section.cover {
         width: 100%;
-        margin-bottom: 5em;
+        margin-bottom: 1em;
         padding: 0;
+    }
+
+    .container .section .btn a {
+        padding: 6px 24px;
+        margin-bottom: 2em;
+    }
+
+    .section ul {
+        flex-direction: column;
+        margin-right: 2em;
+    }
+
+    .section ul>li {
+        padding: 1em 0em;
+    }
+
+    .container .section .title h2 {
+        margin-top: -3em;
+    }
+
+    .container .section .cloth {
+        margin-bottom: 1em;
+        width: 100%;
     }
 
     .menu {
@@ -35,7 +58,7 @@
     }
 
     .container .section {
-        padding: 3em 1em;
+        padding: 3em 2em;
         flex-direction: column;
     }
 
@@ -51,4 +74,78 @@
         height: unset;
     }
 
+}
+
+@media screen and (min-width: 501px) and (max-width: 1024px) {
+
+    .container nav .box:last-child>ul {
+        flex-direction: column;
+        width: 150px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        top: 4em;
+        display: none;
+    }
+
+    .container nav .box .menu:hover+ul {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+
+    .container .section {
+        padding: 3em 5em;
+        flex-direction: column;
+    }
+
+    .container .section .peach,
+    .container .section.cover {
+        width: 100%;
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    .container .section .cover {
+        width: 100%;
+    }
+
+    .container .section .cover figure {
+        width: 100%;
+    }
+
+    .container .section .peach h5 {
+        font-size: 0.9em;
+    }
+
+    .container .section .btn a {
+        padding: 6px 24px;
+        margin-bottom: 2em;
+    }
+
+    .container .section .btn a:nth-child(1) {
+        margin-right: 3em;
+    }
+
+    .container .section .title h2 {
+        margin-top: -3em;
+    }
+
+    .section ul {
+        flex-direction: column;
+        margin-right: 2em;
+    }
+
+    .container .section .cloth {
+        margin-bottom: 4em;
+        width: 100%;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
 }
